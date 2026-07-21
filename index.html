@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EROS FACULDADE | Faculdade de Tecnologia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <a href="#inicio" class="logo">
+            <span class="logo-prompt">&gt;_</span> eros<span class="logo-dot">.</span>
+        </a>
+
+        <nav class="site-nav">
+            <a href="#inicio">Início</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+
+        <!-- Botão de tema — chama alternarTema() do script.js -->
+        <button class="theme-toggle" type="button" onclick="alternarTema()">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+        </button>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="section hero">
+            <div class="hero-text">
+                <p class="eyebrow">// faculdade de tecnologia</p>
+                <h1>Construa o futuro<br>em cada linha de código.</h1>
+                <p class="hero-desc">
+                    Cursos de tecnologia com professores atuantes no mercado,
+                    laboratórios de verdade e uma grade pensada para quem quer
+                    programar desde o primeiro semestre.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#inscricao" class="btn btn-primary">Iniciar pré-inscrição</a>
+                    <a href="#cursos" class="btn btn-ghost">Ver cursos</a>
+                </div>
+
+                <dl class="hero-stats">
+                    <div>
+                        <dt>15+</dt>
+                        <dd>trilhas de tecnologia</dd>
+                    </div>
+                    <div>
+                        <dt>90%</dt>
+                        <dd>das aulas com prática de código</dd>
+                    </div>
+                    <div>
+                        <dt>20 anos</dt>
+                        <dd>formando devs</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="terminal">
+                    <div class="terminal-bar">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <p class="terminal-title">estudante.js</p>
+                    </div>
+                    <pre class="terminal-body"><code><span class="tok-kw">const</span> <span class="tok-var">estudante</span> = {
+  <span class="tok-key">nome</span>: <span class="tok-str">"você"</span>,
+  <span class="tok-key">curso</span>: <span class="tok-str">"Engenharia de Software"</span>,
+  <span class="tok-key">turno</span>: <span class="tok-str">"noite"</span>,
+};
+
+<span class="tok-fn">compilarFuturo</span>(estudante);
+<span class="tok-comment">// build concluído ✔</span><span class="caret"></span></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- CURSOS -->
+        <section id="cursos" class="section courses">
+            <div class="section-head">
+                <p class="eyebrow">// grade de cursos</p>
+                <h2>Cursos de Tecnologia</h2>
+                <p class="section-desc">Seis caminhos, uma área: tecnologia. Escolha o seu.</p>
+            </div>
+
+            <div class="course-grid">
+                <article class="course-card">
+                    <span class="course-tag" data-lang="py">.py</span>
+                    <h3>Ciência da Computação</h3>
+                    <p>Algoritmos, estrutura de dados e fundamentos de inteligência artificial.</p>
+                    <div class="course-meta"><span>Bacharelado</span><span>4 anos</span></div>
+                </article>
+
+                <article class="course-card">
+                    <span class="course-tag" data-lang="java">.java</span>
+                    <h3>Engenharia de Software</h3>
+                    <p>Arquitetura de sistemas, qualidade de código e times ágeis.</p>
+                    <div class="course-meta"><span>Bacharelado</span><span>5 anos</span></div>
+                </article>
+
+                <article class="course-card">
+                    <span class="course-tag" data-lang="js">.js</span>
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <p>Formação rápida e prática em desenvolvimento web e mobile.</p>
+                    <div class="course-meta"><span>Tecnólogo</span><span>2 anos</span></div>
+                </article>
+
+                <article class="course-card">
+                    <span class="course-tag" data-lang="sh">.sh</span>
+                    <h3>Segurança da Informação</h3>
+                    <p>Redes, pentest e defesa contra ameaças digitais.</p>
+                    <div class="course-meta"><span>Tecnólogo</span><span>2 anos</span></div>
+                </article>
+
+                <article class="course-card">
+                    <span class="course-tag" data-lang="csv">.csv</span>
+                    <h3>Ciência de Dados & IA</h3>
+                    <p>Machine learning, estatística aplicada e engenharia de dados.</p>
+                    <div class="course-meta"><span>Tecnólogo</span><span>2 anos</span></div>
+                </article>
+
+                <article class="course-card">
+                    <span class="course-tag" data-lang="css">.css</span>
+                    <h3>UX/UI Design</h3>
+                    <p>Interfaces centradas no usuário e design systems para produtos digitais.</p>
+                    <div class="course-meta"><span>Tecnólogo</span><span>2 anos</span></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- INSCRIÇÃO -->
+        <section id="inscricao" class="section enrollment">
+            <div class="enrollment-card">
+                <p class="eyebrow">// pré-inscrição</p>
+                <h2>Pré-inscrição em Curso Superior</h2>
+                <p class="section-desc">Preencha os dados para iniciar sua inscrição.</p>
+
+                <div class="formulario">
+                    <label class="field">
+                        <span>Nome completo</span>
+                        <input type="text" id="nomeAluno" placeholder="Digite seu nome">
+                    </label>
+
+                    <label class="field">
+                        <span>Curso</span>
+                        <select id="curso">
+                            <option value="">Selecione o curso</option>
+                            <option value="Ciência da Computação">Ciência da Computação</option>
+                            <option value="Engenharia de Software">Engenharia de Software</option>
+                            <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                            <option value="Segurança da Informação">Segurança da Informação</option>
+                            <option value="Ciência de Dados & IA">Ciência de Dados & IA</option>
+                            <option value="UX/UI Design">UX/UI Design</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>Turno</span>
+                        <select id="turno">
+                            <option value="">Selecione o turno</option>
+                            <option value="Manhã">Manhã</option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Noite">Noite</option>
+                        </select>
+                    </label>
+
+                    <button class="btn btn-primary" onclick="processarInscricao()">Enviar Inscrição</button>
+                </div>
+
+                <div id="resultado"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p class="footer-prompt">eros@faculdade:~$ echo "© 2026 Faculdade EROS — Todos os direitos reservados"</p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
