@@ -49,6 +49,6 @@ O layout foi construído utilizando Flexbox, sem o uso de CSS Grid, com o objeti
 - Em tablets, o número de colunas dos cursos é reduzido.
 - Em celulares, todos os elementos passam a ocupar a largura total da tela, empilhados verticalmente, incluindo o menu de navegação, que se reorganiza abaixo do cabeçalho.
 
-## Como executar o projeto
+## Visualização do projeto
 
-Não é necessário nenhum tipo de instalação ou servidor. Basta manter os três arquivos (index.html, style.css e script.js) na mesma pasta e abrir o arquivo index.html diretamente em um navegador de internet.
+Link para a visualização do projeto: 

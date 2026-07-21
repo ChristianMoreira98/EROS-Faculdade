@@ -7,7 +7,7 @@ const iconeTema = document.querySelector('#icone-tema');
 //Função para alternar o tema
 function alternarTema(){
     //Adiciona ou remove a class dark
-    body.classList.toggle('dark');
+    body.classList.toggle('dark');  
 };
 
 
