@@ -51,4 +51,4 @@ O layout foi construído utilizando Flexbox, sem o uso de CSS Grid, com o objeti
 
 ## Visualização do projeto
 
-Link para a visualização do projeto: 
+Link para a visualização do projeto: https://christianmoreira98.github.io/EROS-Faculdade/
