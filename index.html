@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EROS FACULDADE | Faculdade de Tecnologia</title>
-
+    <link rel="shortcut icon" href="img/Code_Generated_Image.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -29,8 +29,7 @@
 
         <!-- Botão de tema — chama alternarTema() do script.js -->
         <button class="theme-toggle" type="button" onclick="alternarTema()">
-            <span class="icon-sun">☀️</span>
-            <span class="icon-moon">🌙</span>
+            <span id="icone-tema">☀️</span>
         </button>
     </header>
 
@@ -138,6 +137,28 @@
                     <div class="course-meta"><span>Tecnólogo</span><span>2 anos</span></div>
                 </article>
             </div>
+
+
+            <div id="overlay" class="overlay" onclick="abrirModalAviso()"></div>
+  <div id="overlay" class="overlay" onclick="fecharModais()"></div>
+
+            <div class="modal-trigger">
+                <button class="button-modal" onclick="abrirModalAviso()">
+                    Veja o nosso comunicado!
+                </button>
+            </div>
+
+          
+
+            <!-- Modal 1 -->
+            <div id="modalAviso" class="modal">
+                <h3>Aviso Institucional!</h3>
+                <p>
+                    Estamos com 30% de desconto na matrícula para início imediato no próximo semestre!
+                </p>
+                <button onclick="fecharModais()">Fechar</button>
+            </div>
+     
         </section>
 
         <!-- INSCRIÇÃO -->
@@ -190,18 +211,5 @@
     </footer>
 
     <script src="src/js/script.js"></script>
-    
-      ... <!-- Conteúdo da página -->
-
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
 </body>
 </html>
